@@ -5,6 +5,7 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import ComParametro from "./components/basicos/ComParametro";
 import Primeiro from "./components/basicos/Primeiro";
 import Familia from "./components/basicos/Familia";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
 
 const App = () => (
   <div className="App">
@@ -12,7 +13,11 @@ const App = () => (
 
     <div className="Cards">
       <Card titulo="#04 - Componentes com Filhos" color="#00C8F8">
-        <Familia sobrenome="Leite" />
+        <Familia sobrenome="Silva">
+          <FamiliaMembro nome="Carlos" />
+          <FamiliaMembro nome="João" />
+          <FamiliaMembro nome="Maria" />
+        </Familia>
       </Card>
       <Card titulo="#03 - Desafio Aleatório" color="#FA6900">
         <Aleatorio min={0} max={60} />
