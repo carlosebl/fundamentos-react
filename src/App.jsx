@@ -6,12 +6,16 @@ import ComParametro from "./components/basicos/ComParametro";
 import Primeiro from "./components/basicos/Primeiro";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 
 const App = () => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#05 - Repetição" color="#FF4C65">
+        <ListaAlunos />
+      </Card>
       <Card titulo="#04 - Componentes com Filhos" color="#00C8F8">
         <Familia sobrenome="Silva">
           <FamiliaMembro nome="Carlos" />
